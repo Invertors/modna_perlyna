@@ -1899,7 +1899,7 @@ select::-ms-expand {
     counter-reset: li; /* Устанавливает идентификатор */
     list-style: none; /* Удаляем стандартную нумерацию */
     margin: 0 50px 4em;
-    color: #3a000e;
+    color: #67000f;
 }
 
 .order_steps1:before {
@@ -1936,7 +1936,8 @@ select::-ms-expand {
 
 .footer_section {
     padding: 25px 0;
-    background: #f4f4f4;
+    color: white;
+    background: #000;
     font-size: 14px;
     line-height: 24px;
     text-align: center
@@ -1948,7 +1949,9 @@ select::-ms-expand {
 }
 
 .footer_section a {
-    color: #222
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 .table .row {
@@ -2025,13 +2028,14 @@ select::-ms-expand {
     text-align: center;
     font-size: 20px;
     font-weight: bold;
-    color: #3a000e;
+    color: #67000f;
     width: 400px;
 }
 
 .section-advantages{
-    border-top: 3px solid #3a000e;
+    border-top: 3px solid #67000f;
     width: 390px;
+    color: #67000f;
     margin: 0 auto 60px;
     text-align: center;
     font-size: 20px;
@@ -2044,7 +2048,9 @@ select::-ms-expand {
 }
 
 
-
+.advantage img{
+    width: 54px;
+}
 .advantage p{
     font-weight: 700;
     text-transform: uppercase;
