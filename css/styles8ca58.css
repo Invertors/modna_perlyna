@@ -216,6 +216,7 @@ section .image {
 
 
 .offer_section .main_title {
+    text-transform: uppercase;
     padding: 10px 20px;
     font-weight: 700;
     font-size: 28px;
