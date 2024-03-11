@@ -17,7 +17,9 @@ $(document).ready(function() {
                 slidesToScroll: 1,
                 autoplay: !1,
                 speed: 500,
-                items: 1
+                items: 1,
+                prevArrow: "<img src='./img/prevIcon.png' class='prev' alt='1'>",
+                nextArrow: "<img src='./img/nextIcon.png' class='next' alt='2'>",
             }),
                 $(".video").slick({
                     slidesToShow: 1,

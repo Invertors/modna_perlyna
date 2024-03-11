@@ -10,81 +10,24 @@
     src: url('../fonts/slick.eot') format('embedded-opentype'),url('../fonts/slick.woff') format('woff'),url('../fonts/slick.ttf') format('truetype'),url('../fonts/slick.svg') format('svg')
 }
 
-.slick-prev,.slick-next {
-    font-size: 0;
-    line-height: 0;
+.slick-arrow{
     position: absolute;
-    top: 50%;
+    Z-INDEX: 10;
     display: block;
-    width: 20px;
-    height: 10px;
-    padding: 0;
+    padding: 4px;
+    width: 25px;
+    background-color: #fff;
+    border-radius: 50%;
+    top: 50%;
     -webkit-transform: translate(0,-50%);
     -ms-transform: translate(0,-50%);
     transform: translate(0,-50%);
     cursor: pointer;
-    color: transparent;
-    border: 0;
-    outline: 0;
-    background: transparent;
-    z-index: 9
+    margin: 0 10px;
 }
 
-.slick-prev:hover,.slick-prev:focus,.slick-next:hover,.slick-next:focus {
-    color: transparent;
-    outline: 0;
-    background: transparent
-}
-
-.slick-prev:hover:before,.slick-prev:focus:before,.slick-next:hover:before,.slick-next:focus:before {
-    opacity: 1
-}
-
-.slick-prev.slick-disabled:before,.slick-next.slick-disabled:before {
-    opacity: 1
-}
-
-.slick-prev:before,.slick-next:before {
-    font-family: 'slick', serif;
-    font-size: 35px;
-    line-height: 1;
-    color: #67000f;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale
-}
-
-.slick-prev {
-    left: 8px
-}
-
-[dir='rtl'] .slick-prev {
-    right: -25px;
-    left: auto
-}
-
-.slick-prev:before {
-    content: '←'
-}
-
-[dir='rtl'] .slick-prev:before {
-    content: '→'
-}
-
-.slick-next {
-    right: 20px
-}
-
-[dir='rtl'] .slick-next {
-    right: auto;
-    left: -25px
-}
-
-.slick-next:before {
-    content: '→'
-}
-
-[dir='rtl'] .slick-next:before {
-    content: '←'
+.next{
+    right: 0;
 }
 
 .slick-dotted.slick-slider {
