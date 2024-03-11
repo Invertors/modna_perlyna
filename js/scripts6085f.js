@@ -45,5 +45,10 @@ $(document).ready(function() {
                 $(".timer .minutes").html(e(i)),
                 $(".timer .seconds").html(e(r)),
                 setTimeout(t, 200)
-        }()
+        }(),
+        $(document).ready(function(){
+            $("#timerCloseButton").click(function(){
+                $(".timer_block").hide(); // Скрываем блок с классом "timer_block"
+            });
+        });
 });

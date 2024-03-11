@@ -409,80 +409,56 @@ section .image {
     border-radius: 5px
 }
 
-.offer_section .timer_block {
-    margin: 0 0 35px;
-    padding: 20px;
-    text-transform: uppercase;
-    text-align: center
+.productLeft{
+    margin: 0 auto ;
+    text-align: center;
+    font-size: 18px;
+    color: #3a000e;
 }
 
-.offer_section.order .timer_block {
-    margin: 0 0 25px
+.timer_block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    padding: 10px;
+    text-align: center;
+    background-color: #fdf9db;
+    z-index: 100;
 }
 
+.timer_block span {
 
-
-.offer_section.offer3 .timer_block {
-    border-top: 1px dashed rgba(0,0,0,0.1);
-    border-bottom: 1px dashed rgba(0,0,0,0.1);
-    background: #f4f4f4
-}
-
-.offer_section .timer_block p {
-    margin: 0 0 15px;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 16px
 }
 
-.offer_section .timer_block .timer {
-    margin: 0 auto;
-    width: 370px
+.timer_block .timer {
+    margin: 0 5px;
+    display: flex;
+    gap: 5px;
 }
 
-.offer_section .timer_block .timer_item {
-    float: left;
-    margin: 0 35px 0 0;
-    width: 100px
+ .timer_block .timer_item {
+     text-align: center;
+     padding: 6px 12px;
+     border: 0px solid rgb(248, 246, 246);
+     border-radius: 0px;
+     background-color: rgba(0, 0, 0, 0.1);
+     background-image: initial;
+     width: unset;
 }
 
-.offer_section .timer_block .timer_item:last-child {
-    margin: 0
+.closeButton{
+    position: absolute;
+    width: 30px;
+    top: 0;
+    right: 20px;
+    cursor: pointer;
 }
 
-.offer_section .timer_block .count {
-    margin: 0 0 10px;
-    height: 60px
-}
-
-.offer_section .timer_block .count span {
-    display: block;
-    float: left;
-    margin: 0 8px 0 0;
-    width: 46px;
-    height: 60px;
-    background: #c5766f;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 60px;
-    color: #fff
-}
-
-.offer_section .timer_block .count span:last-child {
-    margin: 0
-}
-
-.offer_section .timer_block .text {
-    font-size: 13px;
-    line-height: 13px
-}
-
-.offer_section .products_count {
-    padding: 25px;
-    font-size: 16px;
-    line-height: 24px;
-    color: #fff;
-    text-align: center
-}
 
 .offer_section.offer3 .products_count {
     color: #222
@@ -539,9 +515,8 @@ select,input {
 select[name="comment"] {
     display: block;
     width: 370px;
-    border: 1px solid #dedede;
+    border: 1px solid #3a000e;
     height: 72px;
-    background-color: #ebebeb;
     border-radius: 5px;
     -webkit-border-radius: 5px;
     margin: 0 auto 20px;
@@ -2042,4 +2017,41 @@ select::-ms-expand {
 
 .table_women .table_title {
     background: #f273a6
+}
+
+.formTitle{
+    margin: 40px auto 0;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #3a000e;
+    width: 400px;
+}
+
+.section-advantages{
+    border-top: 3px solid #3a000e;
+    width: 390px;
+    margin: 0 auto 60px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 31px;
+}
+
+.advantage{
+    margin: 0 auto 20px;
+    width: 350px;
+}
+
+
+
+.advantage p{
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.advantage:nth-child(1) p{
+    margin-top: -10px;
+    margin-bottom: 10px;
+    line-height: 0;
 }
