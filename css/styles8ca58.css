@@ -1,19 +1,20 @@
-.video_block {
-    width: 100px;
-    height: 100px;
-    background-color: #000;
-    overflow: hidden;
-    position: relative;
+.companyNumber{
+    position: fixed;
+    width: 60px;
+    background-color: #199c68;
+    padding: 10px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    bottom: 80px;
+    right: 10px;
+    z-index: 100;
 }
 
-.video_block iframe,.video_block object,.video_block embed {
-    display: block;
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
+
+
+
 
 body {
     min-width: 480px;
@@ -72,18 +73,7 @@ section {
     padding: 30px 0;
 }
 
-.yellow_theme {
-    background: #f5ca16;
-}
 
-.dark_theme {
-    background: #222;
-    color: #fff;
-}
-
-.gray_theme {
-    background: #cce3f3;
-}
 
 h2.title {
     margin: 0 0 30px;
@@ -94,9 +84,7 @@ h2.title {
     color: #67000f;
 }
 
-.dark_theme h2.title span {
-    color: #f5ca16;
-}
+
 
 .cat {
     padding: 0;
@@ -193,20 +181,6 @@ h2.title {
     line-height: 30px;
 }
 
-.separator {
-    width: 62px;
-    height: 5px;
-    background: url(../img/separator_red.png) center no-repeat;
-}
-
-.separator.white {
-    background-image: url(../img/separator_white.png);
-}
-
-section .image {
-    display: block;
-    margin: 0 auto 30px;
-}
 
 .offer_section {
     padding: 0;
@@ -252,39 +226,8 @@ section .image {
     background: rgba(235,235,235,0.8)
 }
 
-.offer_section .info_block .discount {
-    width: 112px;
-    height: 112px;
-    background: center no-repeat;
-    font-weight: 700;
-    font-size: 13px;
-    line-height: 13px;
-    text-transform: uppercase;
-    position: absolute;
-    top: 46px;
-    right: 0
-}
 
 
-
-.offer_section.offer3 .info_block .discount {
-    background-image: url(../img/offer3__discount_bgc9c21.png)
-}
-
-.offer_section .info_block .discount b {
-    display: block;
-    width: 100px;
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    transform: rotate(45deg);
-    white-space: nowrap;
-    position: absolute;
-    top: 42px;
-    left: 21px;
-    color: #fff
-}
 
 
 .offer_section.offer3 .price_block {
@@ -543,11 +486,11 @@ select::-ms-expand {
     display: none
 }
 
-.offer_section .field[name='name'] {
+.offer_section .field[name='customerName'] {
     background: #ebebeb url('../img/offer__name_icon77466.png') 22px center no-repeat
 }
 
-.offer_section .field[name='phone'] {
+.offer_section .field[name='phoneNumber'] {
     margin: 0 auto 35px;
     background: #ebebeb url('../img/offer__phone_icon9a33f.png') 20px center no-repeat
 }
@@ -556,11 +499,11 @@ select::-ms-expand {
     border: 1px solid #dedede
 }
 
-.offer_section.offer3 .field[name='name'] {
+.offer_section.offer3 .field[name='customerName'] {
     background: #f0f0f0 url('../img/offer__name_icon77466.png') 22px center no-repeat
 }
 
-.offer_section.offer3 .field[name='phone'] {
+.offer_section.offer3 .field[name='phoneNumber'] {
     margin: 0 auto 35px;
     background: #f0f0f0 url('../img/offer__phone_icon9a33f.png') 20px center no-repeat
 }
@@ -601,22 +544,8 @@ select::-ms-expand {
     opacity: 0
 }
 
-.video_block {
-    width: 480px;
-    height: 270px;
-    background-color: #000;
-    overflow: hidden;
-    position: relative
-}
 
-.video_block iframe,.video_block object,.video_block embed {
-    display: block;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0
-}
+
 
 .description_section {
     padding: 30px 0 15px
@@ -786,20 +715,6 @@ select::-ms-expand {
     padding: 30px 0 0
 }
 
-.dark_theme .list2 li:before {
-    -webkit-box-shadow: 0 0 0 2px #222 inset;
-    -moz-box-shadow: 0 0 0 2px #222 inset;
-    box-shadow: 0 0 0 2px #222 inset
-}
-
-.slider .owl-prev,.slider .owl-next {
-    width: 50px;
-    height: 36px;
-    background: url(../img/slider__arrows.png) no-repeat;
-    position: absolute;
-    top: 50%;
-    margin-top: -18px
-}
 
 .slider .owl-prev {
     background-position: left center;
@@ -963,16 +878,6 @@ select::-ms-expand {
     text-transform: uppercase
 }
 
-.benefits_list4 .text_block li {
-    background: url(../img/check.png) no-repeat 0 4px;
-    padding: 0 0 10px 22px
-}
-
-.benefits_list5 {
-    background: url(../img/bg_light.jpg);
-    overflow: hidden
-}
-
 .benefits_list5.dark {
     background: #222
 }
@@ -1020,14 +925,6 @@ select::-ms-expand {
     padding: 20px 0;
     background: #ebebeb;
     overflow: hidden
-}
-
-.benefits_list6 .benefit_item {
-    margin: 0 0 20px;
-    background: #fff url(../img/bg_light.jpg);
-    -webkit-box-shadow: 0 0 20px rgba(2,2,2,0.1);
-    -moz-box-shadow: 0 0 20px rgba(2,2,2,0.1);
-    box-shadow: 0 0 20px rgba(2,2,2,0.1)
 }
 
 .benefits_list6 .benefit_item:last-child {
@@ -1403,12 +1300,6 @@ select::-ms-expand {
     margin: 0 60px 30px 0
 }
 
-.opinion1_section .author_block {
-    margin: 0 0 20px;
-    padding: 0 65px 0 0;
-    background: url(../img/quote2_icon.png) right 48px no-repeat
-}
-
 .opinion1_section .author_block img {
     display: block;
     float: left;
@@ -1469,14 +1360,6 @@ select::-ms-expand {
     right: -16px
 }
 
-.opinion2_section {
-    padding: 30px;
-    background: #222 url(../img/opinion2_bg.jpg) center top no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover
-}
 
 .opinion2_section h2.title {
     color: #fff
@@ -1610,10 +1493,6 @@ select::-ms-expand {
     margin: 0 0 25px
 }
 
-.reviews1_section .author_block {
-    padding: 0 50px 0 0;
-    background: url(../img/quote1_icon.png) right center no-repeat
-}
 
 .reviews1_section .author_block img {
     display: block;
@@ -1659,10 +1538,6 @@ select::-ms-expand {
     margin: 0 0 25px
 }
 
-.reviews2_section .author_block {
-    padding: 0 50px 0 0;
-    background: url(../img/quote1_icon.png) right center no-repeat
-}
 
 .reviews2_section .author_block img {
     display: block;
@@ -1685,13 +1560,7 @@ select::-ms-expand {
     line-height: 24px
 }
 
-.reviews2_section .owl-prev,.reviews2_section .owl-next {
-    width: 40px;
-    height: 36px;
-    background: url(../img/reviews2__arrows.png) no-repeat;
-    position: absolute;
-    top: 135px
-}
+
 
 .reviews2_section .owl-prev {
     background-position: left center;
@@ -1707,10 +1576,6 @@ select::-ms-expand {
     padding: 30px
 }
 
-.reviews3_section h2.title {
-    padding: 0 50px 0 0;
-    background: url(../img/quote1_icon.png) right 7px no-repeat
-}
 
 .reviews3_section .review_item {
     margin: 0 0 30px
@@ -1751,13 +1616,6 @@ select::-ms-expand {
     text-align: right
 }
 
-.reviews3_section .author_block .rating {
-    margin: 0 0 6px;
-    width: 76px;
-    height: 12px;
-    background: url(../img/reviews3__stars.png) center no-repeat
-}
-
 .reviews3_section .review_item p {
     margin: 0 0 20px
 }
@@ -1781,10 +1639,7 @@ select::-ms-expand {
     margin-bottom: 10px
 }
 
-.reviews4_section {
-    padding: 30px;
-    background: #f5ca16 url(../img/reviews4_bg.png) right top no-repeat
-}
+
 
 .reviews4_section h2.title {
     margin: 0 140px 30px 0
@@ -1798,11 +1653,7 @@ select::-ms-expand {
     padding: 0 0 25px
 }
 
-.reviews4_section .author_block {
-    margin: 30px 30px 20px;
-    padding: 0 50px 0 0;
-    background: url(../img/quote1_icon.png) right center no-repeat
-}
+
 
 .reviews4_section .author_block img {
     display: block;
@@ -1829,13 +1680,7 @@ select::-ms-expand {
     margin: 0 30px
 }
 
-.reviews4_section .owl-prev,.reviews4_section .owl-next {
-    width: 40px;
-    height: 36px;
-    background: url(../img/reviews4__arrows.png) no-repeat;
-    position: absolute;
-    top: 132px
-}
+
 
 .reviews4_section .owl-prev {
     background-position: left center;
@@ -1847,10 +1692,6 @@ select::-ms-expand {
     right: 0
 }
 
-.order_info {
-    background: url(../img/bg_light.jpg);
-    overflow: hidden
-}
 
 .order_info .info_item {
     float: left;
@@ -1936,7 +1777,8 @@ select::-ms-expand {
 }
 
 .footer_section {
-    padding: 25px 0;
+    padding-bottom: 60px;
+    padding-top: 25px;
     color: white;
     background: #000;
     font-size: 14px;

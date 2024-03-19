@@ -3,13 +3,12 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=480">
-    <link rel="icon" href="favicon.ico">
     <title>ПРОГУЛЯНКОВИЙ КОСТЮМ</title>
     <meta name="description" content="Широкий вибір стильних та якісних костюмів для всіх випадків. Відкрийте для себе наші колекції зараз і створіть свій неповторний образ!">
     <meta property="og:type" content="website">
     <meta property="og:description" content="ПРОГУЛЯНКОВИЙ КОСТЮМ">
     <meta property="og:title" content="ПРОГУЛЯНКОВИЙ КОСТЮМ">
-    <meta name="facebook-domain-verification" content="xnkvi5766ndbde8smkrnk5yju8hlxi" />
+
     <!-- Facebook Pixel Code -->
     <script>
     !function(f,b,e,v,n,t,s)
@@ -55,7 +54,7 @@
 </div>
 <div class="main_wrapper">
 
-<a class="companyNumber" href="tel:+380689008456"><img src="img/telephoneWhiteIcon.png"/></a>
+
 
     <header class="offer_section offer3">
 
@@ -430,7 +429,6 @@
             </select>
 
             <select id="size" name="size" required="">
-		<option selected="" disabled="">Оберіть розмір</option>
                 <option value="50-52(S)">50-52(S)</option>
                 <option value="54-56(M)">54-56(M)</option>
                 <option value="58-60(L)">58-60(L)</option>
@@ -438,7 +436,7 @@
 
             <input id="userName" class="field" type="text" name="customerName" placeholder="Введіть Ваше им'я" required="">
             <input id="phoneNumber" class="field" type="tel" name="phoneNumber" placeholder="Введіть Ваш телефон" required="">
-            <input type="hidden" value="0165" name="model" id="model">
+            <input type="hidden" value="ПРОГУЛЯНКОВИЙ КОСТЮМ" name="productName" id="productName">
             <input type="hidden" value="" name="sekunda" id="sekunda">
             <button class="button" type="submit">Оформити замовлення</button>
         </form>
@@ -461,7 +459,7 @@
             var phon = $(this).find('input[name=\'phoneNumber\']').val();
 
             if (phon.indexOf('_') == -1 && phon != null && typeof phon !== 'undefined' && phon != '') {
-		console.log("number:", phon);
+		
             } else {
                 alert('Введіть ваш номер телефона!');
                 return false;
